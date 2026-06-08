@@ -1,32 +1,232 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Rashif Gibran Darmawan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Rashif Gibran Darmawan</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.profile{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+}
+
+section{
+    padding:80px 0;
+}
+
+.title{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#38bdf8;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#38bdf8;
+    color:black;
+    padding:10px 15px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+</style>
 </head>
+
 <body>
-    <h1>Muhammad Rashif Gibran Darmawan</h1>
 
-    <h2>Tentang Saya</h2>
-    <p>
-        Lulusan SMKN 4 Bandung jurusan Rekayasa Perangkat Lunak
-        dengan pengalaman PKL sebagai Fullstack Developer di
-        PT Tabel Data Informatika.
-    </p>
+<div class="container">
 
-    <h2>Pengalaman</h2>
-    <ul>
-        <li>Fullstack Developer Intern - PT Tabel Data Informatika</li>
-    </ul>
+<section class="hero">
 
-    <h2>Proyek</h2>
-    <ul>
-        <li>Sistem Inventaris UMKM</li>
-        <li>E-Commerce Java Spring Boot & React</li>
-    </ul>
+<div class="hero-content">
 
-    <h2>Kontak</h2>
-    <p>Email: rashifgibrann@gmail.com</p>
+<div class="hero-text">
+<h1>Muhammad Rashif Gibran Darmawan</h1>
+<h2>Fullstack Developer</h2>
+
+<p>
+Lulusan SMKN 4 Bandung jurusan Rekayasa Perangkat Lunak
+dengan pengalaman PKL sebagai Fullstack Developer Intern
+di PT Tabel Data Informatika. Memiliki minat dalam
+pengembangan aplikasi web, backend development,
+dan manajemen basis data.
+</p>
+
+<a href="mailto:rashifgibrann@gmail.com" class="btn">
+Hubungi Saya
+</a>
+
+</div>
+
+<img src="https://via.placeholder.com/300" class="profile">
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Pengalaman</h2>
+
+<div class="card">
+<h3>PT Tabel Data Informatika</h3>
+<p>Fullstack Developer Intern</p>
+<br>
+<p>
+Mengembangkan fitur backend menggunakan Java Spring Boot,
+REST API, database MySQL, testing, debugging,
+dan maintenance aplikasi perusahaan.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Proyek</h2>
+
+<div class="project-grid">
+
+<div class="card">
+<h3>Sistem Inventaris UMKM</h3>
+<p>Sistem pengelolaan stok dan inventaris barang.</p>
+</div>
+
+<div class="card">
+<h3>E-Commerce</h3>
+<p>Java Spring Boot + React JS.</p>
+</div>
+
+<div class="card">
+<h3>ETO Corporate</h3>
+<p>Platform monitoring transaksi dan laporan perusahaan.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Java</div>
+<div class="skill">Spring Boot</div>
+<div class="skill">React JS</div>
+<div class="skill">MySQL</div>
+<div class="skill">SQL</div>
+<div class="skill">REST API</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Kontak</h2>
+
+<div class="card">
+<p>Email : rashifgibrann@gmail.com</p>
+<p>WhatsApp : 085945814509</p>
+<p>GitHub : github.com/Rasippp</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Muhammad Rashif Gibran Darmawan
+</footer>
+
+</div>
+
 </body>
 </html>
